@@ -1,0 +1,130 @@
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*$py.class
+
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+myenv/
+venv/
+env/
+.venv/
+.venv*/
+
+
+# ==========================================
+# Environment Variables / Secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+
+
+# ==========================================
+# API Keys / Credentials
+# ==========================================
+*.pem
+*.key
+credentials.json
+service-account.json
+secrets.json
+
+
+# ==========================================
+# VS Code
+# ==========================================
+.vscode/
+*.code-workspace
+
+
+# ==========================================
+# Jupyter Notebook
+# ==========================================
+.ipynb_checkpoints/
+
+
+# ==========================================
+# Data Files
+# ==========================================
+# Ignore generated/local datasets
+data/*.csv
+data/*.parquet
+data/*.xlsx
+data/*.json
+
+# Keep directory structure
+!data/.gitkeep
+
+
+# ==========================================
+# Machine Learning Models
+# ==========================================
+# Ignore trained model binaries
+models/*.joblib
+models/*.pkl
+models/*.pickle
+models/*.h5
+models/*.keras
+models/*.pt
+models/*.pth
+
+# Keep model metadata
+!models/model_metadata.json
+
+# Keep directory structure
+!models/.gitkeep
+
+
+# ==========================================
+# Databases
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+
+
+# ==========================================
+# Logs
+# ==========================================
+*.log
+logs/
+
+
+# ==========================================
+# Testing / Coverage
+# ==========================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+
+# ==========================================
+# Build / Distribution
+# ==========================================
+build/
+dist/
+*.egg-info/
+
+
+# ==========================================
+# Temporary Files
+# ==========================================
+*.tmp
+*.temp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+
+# ==========================================
+# Streamlit
+# ==========================================
+.streamlit/secrets.toml

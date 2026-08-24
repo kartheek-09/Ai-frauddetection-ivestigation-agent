@@ -1,0 +1,27 @@
+{
+  "model": "logistic_regression",
+  "roc_auc": 0.7020237814001102,
+  "features": [
+    "amount",
+    "transaction_hour",
+    "distance_from_usual_location",
+    "device_risk_score",
+    "location_risk_score",
+    "previous_failed_transactions",
+    "previous_fraud_history",
+    "recent_transaction_count",
+    "account_age_days",
+    "merchant_category",
+    "payment_method"
+  ],
+  "results": {
+    "logistic_regression": {
+      "roc_auc": 0.7020237814001102,
+      "pr_auc": 0.3915514247723074
+    },
+    "random_forest": {
+      "roc_auc": 0.6576305220883534,
+      "pr_auc": 0.35200204616489655
+    }
+  }
+}
