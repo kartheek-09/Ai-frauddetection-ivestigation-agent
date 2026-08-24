@@ -1,6 +1,10 @@
 services:
   - type: web
     name: ai-fraud-detection-agent
-    env: python
-    buildCommand: pip install -r requirements.txt
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python training/generate_data.py && python training/train.py
     startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
