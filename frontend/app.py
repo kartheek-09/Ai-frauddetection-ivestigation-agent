@@ -4,7 +4,7 @@ from pathlib import Path
 import plotly.graph_objects as go
 import streamlit as st
 
-from frontend.api_client import analyze_transaction
+from api_client import analyze_transaction
 
 
 st.set_page_config(
