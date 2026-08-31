@@ -37,3 +37,6 @@ df = pd.DataFrame({
 })
 df.to_csv("data/transactions.csv", index=False)
 print(f"Created {len(df)} records.")
+
+
+
